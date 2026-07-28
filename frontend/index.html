@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a1d">
+  <title>Pitch IQ — Match Predictor</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Pitch IQ home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>Pitch<span>IQ</span></span>
+      </a>
+      <div class="header-status"><span></span> Model online</div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <p class="eyebrow">2026/27 football fixture centre</p>
+          <h1 id="pageTitle">See the game<br><em>before kickoff.</em></h1>
+          <p class="hero-description">Choose an official 2026/27 fixture from Europe’s five biggest leagues and get a data-led pre-match forecast in seconds.</p>
+          <div class="hero-meta" id="heroMeta">
+            <span><b>5</b> supported leagues</span>
+            <span><b>1,752</b> official fixtures loaded</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img id="heroLeagueImage" src="assets/leagues/premier-league.png" alt="Premier League trophy artwork">
+          <div class="hero-art-caption" aria-hidden="true">
+            <span>League spotlight</span>
+            <strong id="heroLeagueName">Premier League</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="card matchup-card" aria-labelledby="matchupTitle">
+        <div class="card-heading matchup-heading">
+          <div>
+            <p class="eyebrow">Matchup builder</p>
+            <h2 id="matchupTitle">Build your prediction</h2>
+          </div>
+          <p class="card-note">Choose a league and fixture</p>
+        </div>
+
+        <form id="predictionForm" novalidate>
+          <div class="fixture-selectors">
+            <div class="team-control league-control">
+              <label for="leagueSelect">League</label>
+              <div class="select-frame">
+                <select id="leagueSelect" name="leagueSelect" aria-describedby="appStatus" disabled>
+                  <option value="">Loading leagues…</option>
+                </select>
+              </div>
+            </div>
+            <div class="team-control fixture-control">
+              <label for="fixtureSelect">Official 2026/27 fixture</label>
+              <div class="select-frame">
+                <select id="fixtureSelect" name="fixtureSelect" aria-describedby="appStatus" disabled>
+                  <option value="">Loading fixtures…</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="match-selectors">
+            <div class="team-control home-control">
+              <label for="homeTeam">Home team</label>
+              <div class="select-frame">
+                <select id="homeTeam" name="homeTeam" aria-describedby="appStatus" disabled>
+                  <option value="">Loading teams…</option>
+                </select>
+              </div>
+              <div class="team-preview" id="homeTeamPreview" aria-live="polite"></div>
+            </div>
+
+            <div class="versus" aria-hidden="true"><span>VS</span></div>
+
+            <div class="team-control away-control">
+              <label for="awayTeam">Away team</label>
+              <div class="select-frame">
+                <select id="awayTeam" name="awayTeam" aria-describedby="appStatus" disabled>
+                  <option value="">Loading teams…</option>
+                </select>
+              </div>
+              <div class="team-preview" id="awayTeamPreview" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <button class="predict-button" id="predictButton" type="submit" disabled>
+            <span class="button-ball" aria-hidden="true">✦</span>
+            <span>Generate prediction</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="status-message" id="appStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="result-panel hidden" id="resultPanel" aria-live="polite">
+          <div class="result-copy">
+            <span class="result-kicker">Projected outcome</span>
+            <h3 id="resultTitle">—</h3>
+            <p id="resultDetail"></p>
+          </div>
+          <div class="confidence-ring" id="confidenceRing" aria-label="Prediction confidence">
+            <span id="confidenceValue">0%</span>
+            <small>confidence</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="card form-card hidden" id="formCard" aria-labelledby="formTitle">
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">Last five fixtures</p>
+            <h2 id="formTitle">Recent form</h2>
+            <p class="form-description" id="formDescription">Latest completed league fixtures, shown oldest to newest.</p>
+          </div>
+          <div class="form-key" aria-label="Form key"><span class="win-key">W</span> Win <span class="draw-key">D</span> Draw <span class="loss-key">L</span> Loss</div>
+        </div>
+        <div class="form-teams">
+          <article class="form-team" id="homeFormPanel"></article>
+          <div class="form-divider" aria-hidden="true"></div>
+          <article class="form-team" id="awayFormPanel"></article>
+        </div>
+      </section>
+
+      <section class="card player-card hidden" id="playerCard" aria-labelledby="playerTitle">
+        <div class="card-heading player-heading">
+          <div>
+            <p class="eyebrow">Player intelligence</p>
+            <h2 id="playerTitle">Player portfolios &amp; fixture picks</h2>
+            <p class="player-description">Each club’s 2026/27 roster with headshots, a ten-season completed-data portfolio, and match-specific scorer and assister signals.</p>
+          </div>
+          <p class="player-source" id="playerSource"></p>
+        </div>
+        <div class="player-team-grid">
+          <article class="player-team-panel" id="homePlayerPanel" aria-label="Home team player statistics"></article>
+          <div class="player-divider" aria-hidden="true"></div>
+          <article class="player-team-panel away" id="awayPlayerPanel" aria-label="Away team player statistics"></article>
+        </div>
+        <p class="player-disclaimer">Scorer and assister picks are pre-line-up signals, not confirmed selections or guarantees. They use completed player data through 2025/26; unavailable records are shown as —.</p>
+      </section>
+
+      <section class="insights-grid" aria-label="Prediction insights">
+        <article class="card chart-card probability-card">
+          <div class="card-heading compact-heading">
+            <div>
+              <p class="eyebrow">Forecast distribution</p>
+              <h2>Win probability</h2>
+            </div>
+          </div>
+          <div class="probability-content">
+            <div class="chart-wrap"><canvas id="probabilityChart" aria-label="Match outcome probability chart"></canvas></div>
+            <div class="probability-legend" id="probabilityLegend">
+              <p><span class="legend-dot home-dot"></span><span>Home win</span><strong>—</strong></p>
+              <p><span class="legend-dot draw-dot"></span><span>Draw</span><strong>—</strong></p>
+              <p><span class="legend-dot away-dot"></span><span>Away win</span><strong>—</strong></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card chart-card accuracy-card">
+          <div class="card-heading compact-heading">
+            <div>
+              <p class="eyebrow">Model performance</p>
+              <h2>Prediction accuracy</h2>
+            </div>
+            <span class="metric-pill" id="accuracyMetric">Loading…</span>
+          </div>
+          <p class="accuracy-copy" id="accuracyCopy">Loading the chronological validation result.</p>
+          <div class="accuracy-chart-wrap"><canvas id="accuracyChart" aria-label="Model accuracy chart"></canvas></div>
+        </article>
+      </section>
+
+      <section class="card history-card" aria-labelledby="historyTitle">
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">Your activity</p>
+            <h2 id="historyTitle">Prediction history</h2>
+          </div>
+          <button class="clear-history hidden" id="clearHistory" type="button">Clear history</button>
+        </div>
+        <div class="history-empty" id="historyEmpty">
+          <span aria-hidden="true">⌁</span>
+          <p>Your generated match forecasts will appear here.</p>
+        </div>
+        <div class="history-table-wrap hidden" id="historyTableWrap">
+          <table>
+            <thead><tr><th>Match</th><th>Prediction</th><th>Confidence</th><th>When</th></tr></thead>
+            <tbody id="history"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>Pitch IQ uses historical match data to generate a statistical forecast. Football remains beautifully unpredictable.</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

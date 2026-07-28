@@ -1,0 +1,21 @@
+# Python environments and generated Python files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Editor, operating-system, and notebook noise
+.DS_Store
+.idea/
+.vscode/
+.ipynb_checkpoints/
+*.log
+
+# Refresh cache: roster CSVs already contain the resolved portraits used by the app.
+data/player_portrait_cache.csv

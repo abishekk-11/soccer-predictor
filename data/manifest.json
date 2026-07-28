@@ -1,0 +1,80 @@
+{
+  "updated_on": "2026-07-28T20:46:07.341283+00:00",
+  "premier_league_rows": 12704,
+  "premier_league_data_through": "2026-05-24",
+  "championship_2025_26_rows": 552,
+  "fixtures_2026_27_rows": 380,
+  "sources": {
+    "results": "https://www.football-data.co.uk/englandm.php",
+    "fixtures": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season/"
+  },
+  "player_data": {
+    "seasons": [
+      "2016-17",
+      "2017-18",
+      "2018-19",
+      "2019-20",
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26"
+    ],
+    "latest_performance_season": "2025-26",
+    "player_season_rows": 7358,
+    "roster_rows": 563,
+    "sources": {
+      "historical_stats": "https://github.com/vaastav/Fantasy-Premier-League",
+      "rosters_and_portraits": "https://github.com/olbauday/FPL-Core-Insights"
+    }
+  },
+  "european_leagues": {
+    "la_liga": {
+      "name": "La Liga",
+      "results_rows": 3795,
+      "results_through": "2026-05-24",
+      "fixtures_rows": 380,
+      "roster_rows": 780,
+      "player_rows": 6627,
+      "player_seasons": 10
+    },
+    "bundesliga": {
+      "name": "Bundesliga",
+      "results_rows": 3060,
+      "results_through": "2026-05-16",
+      "fixtures_rows": 306,
+      "roster_rows": 705,
+      "player_rows": 5667,
+      "player_seasons": 10
+    },
+    "ligue_1": {
+      "name": "Ligue 1",
+      "results_rows": 3485,
+      "results_through": "2026-05-17",
+      "fixtures_rows": 306,
+      "roster_rows": 692,
+      "player_rows": 5679,
+      "player_seasons": 10
+    },
+    "serie_a": {
+      "name": "Serie A",
+      "results_rows": 3801,
+      "results_through": "2026-05-24",
+      "fixtures_rows": 380,
+      "roster_rows": 873,
+      "player_rows": 6242,
+      "player_seasons": 10
+    },
+    "season": "2026-27",
+    "completed_player_season": "2025-26",
+    "player_history_window": "2016/17\u20132025/26",
+    "fixture_references": {
+      "la_liga": "https://www.laliga.com/en-GB/laliga-easports/calendar",
+      "bundesliga": "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/1",
+      "ligue_1": "https://ligue1.com/en/calendar/ligue1",
+      "serie_a": "https://en.legaseriea.it/serie-a/fixtures-results"
+    },
+    "machine_readable_source": "https://site.api.espn.com/"
+  }
+}

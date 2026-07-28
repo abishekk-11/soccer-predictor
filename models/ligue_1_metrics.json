@@ -1,0 +1,25 @@
+{
+  "league": "Ligue 1",
+  "evaluation_method": "Chronological holdout: 2023/24 through 2025/26; no same-day result leakage.",
+  "training_matches": 2568,
+  "holdout_matches": 917,
+  "data_through": "2026-05-17",
+  "validation_start": "2023-08-01",
+  "home_win_baseline_accuracy": 0.4406,
+  "logistic": {
+    "accuracy": 0.5147,
+    "log_loss": 1.0075,
+    "multiclass_brier": 0.6015
+  },
+  "boosted": {
+    "accuracy": 0.4787,
+    "log_loss": 1.0802,
+    "multiclass_brier": 0.6392
+  },
+  "selected_blend": {
+    "hist_gradient_boosting_weight": 0.1,
+    "accuracy": 0.5169,
+    "log_loss": 1.0069,
+    "multiclass_brier": 0.6011
+  }
+}

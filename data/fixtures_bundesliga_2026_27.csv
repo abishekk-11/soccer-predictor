@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,HomeTeamId,AwayTeamId,EventId
+2026-08-28,Bayern Munich,VfB Stuttgart,132,134,401884817
+2026-08-29,1. FC Union Berlin,Eintracht Frankfurt,598,125,401884811
+2026-08-29,Borussia Dortmund,Hamburg SV,124,127,401884816
+2026-08-29,FC Cologne,TSG Hoffenheim,122,7911,401884810
+2026-08-29,Mainz,SC Paderborn 07,2950,3307,401884812
+2026-08-29,RB Leipzig,Borussia Mönchengladbach,11420,268,401884815
+2026-08-29,SV Elversberg,Bayer Leverkusen,10388,131,401884809
+2026-08-30,FC Augsburg,Schalke 04,3841,133,401884813
+2026-08-30,SC Freiburg,Werder Bremen,126,137,401884814
+2026-09-04,VfB Stuttgart,FC Cologne,134,122,401884808
+2026-09-05,Bayer Leverkusen,1. FC Union Berlin,131,598,401884806
+2026-09-05,Borussia Mönchengladbach,SV Elversberg,268,10388,401884804
+2026-09-05,SC Paderborn 07,SC Freiburg,3307,126,401884800
+2026-09-05,Schalke 04,Bayern Munich,133,132,401884801
+2026-09-05,TSG Hoffenheim,Borussia Dortmund,7911,124,401884807
+2026-09-05,Werder Bremen,RB Leipzig,137,11420,401884802
+2026-09-06,Eintracht Frankfurt,FC Augsburg,125,3841,401884805
+2026-09-06,Hamburg SV,Mainz,127,2950,401884803
+2026-09-11,1. FC Union Berlin,Schalke 04,598,133,401884793
+2026-09-12,Borussia Dortmund,SC Paderborn 07,124,3307,401884799
+2026-09-12,FC Augsburg,Bayer Leverkusen,3841,131,401884795
+2026-09-12,FC Cologne,Werder Bremen,122,137,401884792
+2026-09-12,Mainz,Eintracht Frankfurt,2950,125,401884794
+2026-09-12,SC Freiburg,Borussia Mönchengladbach,126,268,401884796
+2026-09-12,TSG Hoffenheim,VfB Stuttgart,7911,134,401884797
+2026-09-13,RB Leipzig,Hamburg SV,11420,127,401884798
+2026-09-13,SV Elversberg,Bayern Munich,10388,132,401884791
+2026-09-18,Bayern Munich,1. FC Union Berlin,132,598,401884790
+2026-09-19,Borussia Mönchengladbach,Mainz,268,2950,401884786
+2026-09-19,Eintracht Frankfurt,SC Freiburg,125,126,401884787
+2026-09-19,Hamburg SV,FC Cologne,127,122,401884785
+2026-09-19,VfB Stuttgart,Borussia Dortmund,134,124,401884789
+2026-09-19,Werder Bremen,FC Augsburg,137,3841,401884784
+2026-09-20,Bayer Leverkusen,RB Leipzig,131,11420,401884788
+2026-09-20,SC Paderborn 07,TSG Hoffenheim,3307,7911,401884782
+2026-09-20,Schalke 04,SV Elversberg,133,10388,401884783
+2026-10-10,1. FC Union Berlin,SV Elversberg,598,10388,401884775
+2026-10-10,Borussia Dortmund,Werder Bremen,124,137,401884781
+2026-10-10,FC Augsburg,Bayern Munich,3841,132,401884777
+2026-10-10,FC Cologne,Borussia Mönchengladbach,122,268,401884774
+2026-10-10,Mainz,Bayer Leverkusen,2950,131,401884776
+2026-10-10,RB Leipzig,Eintracht Frankfurt,11420,125,401884780
+2026-10-10,SC Freiburg,Schalke 04,126,133,401884778
+2026-10-10,SC Paderborn 07,VfB Stuttgart,3307,134,401884773
+2026-10-10,TSG Hoffenheim,Hamburg SV,7911,127,401884779
+2026-10-17,1. FC Union Berlin,Borussia Dortmund,598,124,401884769
+2026-10-17,Bayer Leverkusen,SC Freiburg,131,126,401884771
+2026-10-17,Bayern Munich,RB Leipzig,132,11420,401884772
+2026-10-17,Borussia Mönchengladbach,TSG Hoffenheim,268,7911,401884768
+2026-10-17,Eintracht Frankfurt,FC Cologne,125,122,401884770
+2026-10-17,Hamburg SV,VfB Stuttgart,127,134,401884767
+2026-10-17,SV Elversberg,FC Augsburg,10388,3841,401884764
+2026-10-17,Schalke 04,Mainz,133,2950,401884765
+2026-10-17,Werder Bremen,SC Paderborn 07,137,3307,401884766
+2026-10-24,Borussia Dortmund,Eintracht Frankfurt,124,125,401884763
+2026-10-24,FC Augsburg,1. FC Union Berlin,3841,598,401884758
+2026-10-24,FC Cologne,Schalke 04,122,133,401884756
+2026-10-24,Mainz,Werder Bremen,2950,137,401884757
+2026-10-24,RB Leipzig,SV Elversberg,11420,10388,401884762
+2026-10-24,SC Freiburg,Bayern Munich,126,132,401884759
+2026-10-24,SC Paderborn 07,Hamburg SV,3307,127,401884755
+2026-10-24,TSG Hoffenheim,Bayer Leverkusen,7911,131,401884760
+2026-10-24,VfB Stuttgart,Borussia Mönchengladbach,134,268,401884761
+2026-10-31,1. FC Union Berlin,FC Cologne,598,122,401884750
+2026-10-31,Bayer Leverkusen,VfB Stuttgart,131,134,401884753
+2026-10-31,Bayern Munich,Borussia Dortmund,132,124,401884754
+2026-10-31,Borussia Mönchengladbach,SC Paderborn 07,268,3307,401884749
+2026-10-31,Eintracht Frankfurt,Hamburg SV,125,127,401884752
+2026-10-31,FC Augsburg,SC Freiburg,3841,126,401884751
+2026-10-31,SV Elversberg,Mainz,10388,2950,401884746
+2026-10-31,Schalke 04,RB Leipzig,133,11420,401884747
+2026-10-31,Werder Bremen,TSG Hoffenheim,137,7911,401884748
+2026-11-07,Borussia Dortmund,SV Elversberg,124,10388,401884745
+2026-11-07,FC Cologne,Bayer Leverkusen,122,131,401884738
+2026-11-07,Hamburg SV,Borussia Mönchengladbach,127,268,401884739
+2026-11-07,Mainz,Bayern Munich,2950,132,401884740
+2026-11-07,RB Leipzig,FC Augsburg,11420,3841,401884744
+2026-11-07,SC Freiburg,1. FC Union Berlin,126,598,401884741
+2026-11-07,SC Paderborn 07,Eintracht Frankfurt,3307,125,401884737
+2026-11-07,TSG Hoffenheim,Schalke 04,7911,133,401884742
+2026-11-07,VfB Stuttgart,Werder Bremen,134,137,401884743
+2026-11-21,1. FC Union Berlin,RB Leipzig,598,11420,401884732
+2026-11-21,Bayer Leverkusen,SC Paderborn 07,131,3307,401884735
+2026-11-21,Bayern Munich,FC Cologne,132,122,401884736
+2026-11-21,Borussia Mönchengladbach,Borussia Dortmund,268,124,401884731
+2026-11-21,Eintracht Frankfurt,TSG Hoffenheim,125,7911,401884734
+2026-11-21,FC Augsburg,Mainz,3841,2950,401884733
+2026-11-21,SV Elversberg,SC Freiburg,10388,126,401884728
+2026-11-21,Schalke 04,VfB Stuttgart,133,134,401884729
+2026-11-21,Werder Bremen,Hamburg SV,137,127,401884730
+2026-11-28,Borussia Dortmund,Bayer Leverkusen,124,131,401884727
+2026-11-28,FC Cologne,SV Elversberg,122,10388,401884721
+2026-11-28,Hamburg SV,Bayern Munich,127,132,401884722
+2026-11-28,Mainz,1. FC Union Berlin,2950,598,401884723
+2026-11-28,SC Freiburg,RB Leipzig,126,11420,401884724
+2026-11-28,SC Paderborn 07,Schalke 04,3307,133,401884719
+2026-11-28,TSG Hoffenheim,FC Augsburg,7911,3841,401884725
+2026-11-28,VfB Stuttgart,Eintracht Frankfurt,134,125,401884726
+2026-11-28,Werder Bremen,Borussia Mönchengladbach,137,268,401884720
+2026-12-05,1. FC Union Berlin,Hamburg SV,598,127,401884712
+2026-12-05,Bayer Leverkusen,Borussia Mönchengladbach,131,268,401884716
+2026-12-05,Bayern Munich,SC Paderborn 07,132,3307,401884718
+2026-12-05,Eintracht Frankfurt,Werder Bremen,125,137,401884714
+2026-12-05,FC Augsburg,FC Cologne,3841,122,401884713
+2026-12-05,RB Leipzig,Mainz,11420,2950,401884717
+2026-12-05,SC Freiburg,TSG Hoffenheim,126,7911,401884715
+2026-12-05,SV Elversberg,VfB Stuttgart,10388,134,401884710
+2026-12-05,Schalke 04,Borussia Dortmund,133,124,401884711
+2026-12-12,Borussia Dortmund,FC Augsburg,124,3841,401884709
+2026-12-12,Borussia Mönchengladbach,Eintracht Frankfurt,268,125,401884705
+2026-12-12,FC Cologne,RB Leipzig,122,11420,401884703
+2026-12-12,Hamburg SV,Schalke 04,127,133,401884704
+2026-12-12,Mainz,SC Freiburg,2950,126,401884706
+2026-12-12,SC Paderborn 07,SV Elversberg,3307,10388,401884701
+2026-12-12,TSG Hoffenheim,Bayern Munich,7911,132,401884707
+2026-12-12,VfB Stuttgart,1. FC Union Berlin,134,598,401884708
+2026-12-12,Werder Bremen,Bayer Leverkusen,137,131,401884702
+2026-12-19,1. FC Union Berlin,TSG Hoffenheim,598,7911,401884694
+2026-12-19,Bayer Leverkusen,Eintracht Frankfurt,131,125,401884698
+2026-12-19,Bayern Munich,Werder Bremen,132,137,401884700
+2026-12-19,FC Augsburg,SC Paderborn 07,3841,3307,401884696
+2026-12-19,Mainz,FC Cologne,2950,122,401884695
+2026-12-19,RB Leipzig,Borussia Dortmund,11420,124,401884699
+2026-12-19,SC Freiburg,VfB Stuttgart,126,134,401884697
+2026-12-19,SV Elversberg,Hamburg SV,10388,127,401884692
+2026-12-19,Schalke 04,Borussia Mönchengladbach,133,268,401884693
+2027-01-09,Borussia Dortmund,Mainz,124,2950,401884691
+2027-01-09,Borussia Mönchengladbach,Bayern Munich,268,132,401884687
+2027-01-09,Eintracht Frankfurt,Schalke 04,125,133,401884688
+2027-01-09,FC Cologne,SC Freiburg,122,126,401884685
+2027-01-09,Hamburg SV,Bayer Leverkusen,127,131,401884686
+2027-01-09,SC Paderborn 07,RB Leipzig,3307,11420,401884683
+2027-01-09,TSG Hoffenheim,SV Elversberg,7911,10388,401884689
+2027-01-09,VfB Stuttgart,FC Augsburg,134,3841,401884690
+2027-01-09,Werder Bremen,1. FC Union Berlin,137,598,401884684
+2027-01-13,1. FC Union Berlin,SC Paderborn 07,598,3307,401884677
+2027-01-13,Bayern Munich,Bayer Leverkusen,132,131,401884682
+2027-01-13,FC Augsburg,Borussia Mönchengladbach,3841,268,401884679
+2027-01-13,FC Cologne,Borussia Dortmund,122,124,401884676
+2027-01-13,Mainz,TSG Hoffenheim,2950,7911,401884678
+2027-01-13,RB Leipzig,VfB Stuttgart,11420,134,401884681
+2027-01-13,SC Freiburg,Hamburg SV,126,127,401884680
+2027-01-13,SV Elversberg,Eintracht Frankfurt,10388,125,401884674
+2027-01-13,Schalke 04,Werder Bremen,133,137,401884675
+2027-01-16,Bayer Leverkusen,Schalke 04,131,133,401884670
+2027-01-16,Borussia Dortmund,SC Freiburg,124,126,401884673
+2027-01-16,Borussia Mönchengladbach,1. FC Union Berlin,268,598,401884668
+2027-01-16,Eintracht Frankfurt,Bayern Munich,125,132,401884669
+2027-01-16,Hamburg SV,FC Augsburg,127,3841,401884667
+2027-01-16,SC Paderborn 07,FC Cologne,3307,122,401884665
+2027-01-16,TSG Hoffenheim,RB Leipzig,7911,11420,401884671
+2027-01-16,VfB Stuttgart,Mainz,134,2950,401884672
+2027-01-16,Werder Bremen,SV Elversberg,137,10388,401884666
+2027-01-23,Bayer Leverkusen,SV Elversberg,131,10388,401884662
+2027-01-23,Borussia Mönchengladbach,RB Leipzig,268,11420,401884660
+2027-01-23,Eintracht Frankfurt,1. FC Union Berlin,125,598,401884661
+2027-01-23,Hamburg SV,Borussia Dortmund,127,124,401884659
+2027-01-23,SC Paderborn 07,Mainz,3307,2950,401884656
+2027-01-23,Schalke 04,FC Augsburg,133,3841,401884657
+2027-01-23,TSG Hoffenheim,FC Cologne,7911,122,401884663
+2027-01-23,VfB Stuttgart,Bayern Munich,134,132,401884664
+2027-01-23,Werder Bremen,SC Freiburg,137,126,401884658
+2027-01-30,1. FC Union Berlin,Bayer Leverkusen,598,131,401884649
+2027-01-30,Bayern Munich,Schalke 04,132,133,401884655
+2027-01-30,Borussia Dortmund,TSG Hoffenheim,124,7911,401884654
+2027-01-30,FC Augsburg,Eintracht Frankfurt,3841,125,401884651
+2027-01-30,FC Cologne,VfB Stuttgart,122,134,401884648
+2027-01-30,Mainz,Hamburg SV,2950,127,401884650
+2027-01-30,RB Leipzig,Werder Bremen,11420,137,401884653
+2027-01-30,SC Freiburg,SC Paderborn 07,126,3307,401884652
+2027-01-30,SV Elversberg,Borussia Mönchengladbach,10388,268,401884647
+2027-02-06,Bayer Leverkusen,FC Augsburg,131,3841,401884644
+2027-02-06,Bayern Munich,SV Elversberg,132,10388,401884646
+2027-02-06,Borussia Mönchengladbach,SC Freiburg,268,126,401884642
+2027-02-06,Eintracht Frankfurt,Mainz,125,2950,401884643
+2027-02-06,Hamburg SV,RB Leipzig,127,11420,401884641
+2027-02-06,SC Paderborn 07,Borussia Dortmund,3307,124,401884638
+2027-02-06,Schalke 04,1. FC Union Berlin,133,598,401884639
+2027-02-06,VfB Stuttgart,TSG Hoffenheim,134,7911,401884645
+2027-02-06,Werder Bremen,FC Cologne,137,122,401884640
+2027-02-13,1. FC Union Berlin,Bayern Munich,598,132,401884631
+2027-02-13,Borussia Dortmund,VfB Stuttgart,124,134,401884637
+2027-02-13,FC Augsburg,Werder Bremen,3841,137,401884633
+2027-02-13,FC Cologne,Hamburg SV,122,127,401884630
+2027-02-13,Mainz,Borussia Mönchengladbach,2950,268,401884632
+2027-02-13,RB Leipzig,Bayer Leverkusen,11420,131,401884636
+2027-02-13,SC Freiburg,Eintracht Frankfurt,126,125,401884634
+2027-02-13,SV Elversberg,Schalke 04,10388,133,401884629
+2027-02-13,TSG Hoffenheim,SC Paderborn 07,7911,3307,401884635
+2027-02-20,Bayer Leverkusen,Mainz,131,2950,401884626
+2027-02-20,Bayern Munich,FC Augsburg,132,3841,401884628
+2027-02-20,Borussia Mönchengladbach,FC Cologne,268,122,401884624
+2027-02-20,Eintracht Frankfurt,RB Leipzig,125,11420,401884625
+2027-02-20,Hamburg SV,TSG Hoffenheim,127,7911,401884623
+2027-02-20,SV Elversberg,1. FC Union Berlin,10388,598,401884620
+2027-02-20,Schalke 04,SC Freiburg,133,126,401884621
+2027-02-20,VfB Stuttgart,SC Paderborn 07,134,3307,401884627
+2027-02-20,Werder Bremen,Borussia Dortmund,137,124,401884622
+2027-02-27,Borussia Dortmund,1. FC Union Berlin,124,598,401884619
+2027-02-27,FC Augsburg,SV Elversberg,3841,10388,401884614
+2027-02-27,FC Cologne,Eintracht Frankfurt,122,125,401884612
+2027-02-27,Mainz,Schalke 04,2950,133,401884613
+2027-02-27,RB Leipzig,Bayern Munich,11420,132,401884618
+2027-02-27,SC Freiburg,Bayer Leverkusen,126,131,401884615
+2027-02-27,SC Paderborn 07,Werder Bremen,3307,137,401884611
+2027-02-27,TSG Hoffenheim,Borussia Mönchengladbach,7911,268,401884616
+2027-02-27,VfB Stuttgart,Hamburg SV,134,127,401884617
+2027-03-03,1. FC Union Berlin,FC Augsburg,598,3841,401884607
+2027-03-03,Bayer Leverkusen,TSG Hoffenheim,131,7911,401884609
+2027-03-03,Bayern Munich,SC Freiburg,132,126,401884610
+2027-03-03,Borussia Mönchengladbach,VfB Stuttgart,268,134,401884606
+2027-03-03,Eintracht Frankfurt,Borussia Dortmund,125,124,401884608
+2027-03-03,Hamburg SV,SC Paderborn 07,127,3307,401884605
+2027-03-03,SV Elversberg,RB Leipzig,10388,11420,401884602
+2027-03-03,Schalke 04,FC Cologne,133,122,401884603
+2027-03-03,Werder Bremen,Mainz,137,2950,401884604
+2027-03-06,Borussia Dortmund,Bayern Munich,124,132,401884601
+2027-03-06,FC Cologne,1. FC Union Berlin,122,598,401884594
+2027-03-06,Hamburg SV,Eintracht Frankfurt,127,125,401884595
+2027-03-06,Mainz,SV Elversberg,2950,10388,401884596
+2027-03-06,RB Leipzig,Schalke 04,11420,133,401884600
+2027-03-06,SC Freiburg,FC Augsburg,126,3841,401884597
+2027-03-06,SC Paderborn 07,Borussia Mönchengladbach,3307,268,401884593
+2027-03-06,TSG Hoffenheim,Werder Bremen,7911,137,401884598
+2027-03-06,VfB Stuttgart,Bayer Leverkusen,134,131,401884599
+2027-03-13,1. FC Union Berlin,SC Freiburg,598,126,401884588
+2027-03-13,Bayer Leverkusen,FC Cologne,131,122,401884591
+2027-03-13,Bayern Munich,Mainz,132,2950,401884592
+2027-03-13,Borussia Mönchengladbach,Hamburg SV,268,127,401884587
+2027-03-13,Eintracht Frankfurt,SC Paderborn 07,125,3307,401884590
+2027-03-13,FC Augsburg,RB Leipzig,3841,11420,401884589
+2027-03-13,SV Elversberg,Borussia Dortmund,10388,124,401884584
+2027-03-13,Schalke 04,TSG Hoffenheim,133,7911,401884585
+2027-03-13,Werder Bremen,VfB Stuttgart,137,134,401884586
+2027-03-20,Borussia Dortmund,Borussia Mönchengladbach,124,268,401884583
+2027-03-20,FC Cologne,Bayern Munich,122,132,401884576
+2027-03-20,Hamburg SV,Werder Bremen,127,137,401884577
+2027-03-20,Mainz,FC Augsburg,2950,3841,401884578
+2027-03-20,RB Leipzig,1. FC Union Berlin,11420,598,401884582
+2027-03-20,SC Freiburg,SV Elversberg,126,10388,401884579
+2027-03-20,SC Paderborn 07,Bayer Leverkusen,3307,131,401884575
+2027-03-20,TSG Hoffenheim,Eintracht Frankfurt,7911,125,401884580
+2027-03-20,VfB Stuttgart,Schalke 04,134,133,401884581
+2027-04-03,1. FC Union Berlin,Mainz,598,2950,401884569
+2027-04-03,Bayer Leverkusen,Borussia Dortmund,131,124,401884572
+2027-04-03,Bayern Munich,Hamburg SV,132,127,401884574
+2027-04-03,Borussia Mönchengladbach,Werder Bremen,268,137,401884568
+2027-04-03,Eintracht Frankfurt,VfB Stuttgart,125,134,401884571
+2027-04-03,FC Augsburg,TSG Hoffenheim,3841,7911,401884570
+2027-04-03,RB Leipzig,SC Freiburg,11420,126,401884573
+2027-04-03,SV Elversberg,FC Cologne,10388,122,401884566
+2027-04-03,Schalke 04,SC Paderborn 07,133,3307,401884567
+2027-04-10,Borussia Dortmund,Schalke 04,124,133,401884565
+2027-04-10,Borussia Mönchengladbach,Bayer Leverkusen,268,131,401884561
+2027-04-10,FC Cologne,FC Augsburg,122,3841,401884559
+2027-04-10,Hamburg SV,1. FC Union Berlin,127,598,401884560
+2027-04-10,Mainz,RB Leipzig,2950,11420,401884562
+2027-04-10,SC Paderborn 07,Bayern Munich,3307,132,401884557
+2027-04-10,TSG Hoffenheim,SC Freiburg,7911,126,401884563
+2027-04-10,VfB Stuttgart,SV Elversberg,134,10388,401884564
+2027-04-10,Werder Bremen,Eintracht Frankfurt,137,125,401884558
+2027-04-17,1. FC Union Berlin,VfB Stuttgart,598,134,401884550
+2027-04-17,Bayer Leverkusen,Werder Bremen,131,137,401884554
+2027-04-17,Bayern Munich,TSG Hoffenheim,132,7911,401884556
+2027-04-17,Eintracht Frankfurt,Borussia Mönchengladbach,125,268,401884552
+2027-04-17,FC Augsburg,Borussia Dortmund,3841,124,401884551
+2027-04-17,RB Leipzig,FC Cologne,11420,122,401884555
+2027-04-17,SC Freiburg,Mainz,126,2950,401884553
+2027-04-17,SV Elversberg,SC Paderborn 07,10388,3307,401884548
+2027-04-17,Schalke 04,Hamburg SV,133,127,401884549
+2027-04-24,Borussia Dortmund,RB Leipzig,124,11420,401884547
+2027-04-24,Borussia Mönchengladbach,Schalke 04,268,133,401884543
+2027-04-24,Eintracht Frankfurt,Bayer Leverkusen,125,131,401884544
+2027-04-24,FC Cologne,Mainz,122,2950,401884541
+2027-04-24,Hamburg SV,SV Elversberg,127,10388,401884542
+2027-04-24,SC Paderborn 07,FC Augsburg,3307,3841,401884539
+2027-04-24,TSG Hoffenheim,1. FC Union Berlin,7911,598,401884545
+2027-04-24,VfB Stuttgart,SC Freiburg,134,126,401884546
+2027-04-24,Werder Bremen,Bayern Munich,137,132,401884540
+2027-05-08,1. FC Union Berlin,Werder Bremen,598,137,401884532
+2027-05-08,Bayer Leverkusen,Hamburg SV,131,127,401884536
+2027-05-08,Bayern Munich,Borussia Mönchengladbach,132,268,401884538
+2027-05-08,FC Augsburg,VfB Stuttgart,3841,134,401884534
+2027-05-08,Mainz,Borussia Dortmund,2950,124,401884533
+2027-05-08,RB Leipzig,SC Paderborn 07,11420,3307,401884537
+2027-05-08,SC Freiburg,FC Cologne,126,122,401884535
+2027-05-08,SV Elversberg,TSG Hoffenheim,10388,7911,401884530
+2027-05-08,Schalke 04,Eintracht Frankfurt,133,125,401884531
+2027-05-15,Bayer Leverkusen,Bayern Munich,131,132,401884526
+2027-05-15,Borussia Dortmund,FC Cologne,124,122,401884529
+2027-05-15,Borussia Mönchengladbach,FC Augsburg,268,3841,401884524
+2027-05-15,Eintracht Frankfurt,SV Elversberg,125,10388,401884525
+2027-05-15,Hamburg SV,SC Freiburg,127,126,401884503
+2027-05-15,SC Paderborn 07,1. FC Union Berlin,3307,598,401884501
+2027-05-15,TSG Hoffenheim,Mainz,7911,2950,401884527
+2027-05-15,VfB Stuttgart,RB Leipzig,134,11420,401884528
+2027-05-15,Werder Bremen,Schalke 04,137,133,401884502
+2027-05-22,1. FC Union Berlin,Borussia Mönchengladbach,598,268,401884495
+2027-05-22,Bayern Munich,Eintracht Frankfurt,132,125,401884500
+2027-05-22,FC Augsburg,Hamburg SV,3841,127,401884497
+2027-05-22,FC Cologne,SC Paderborn 07,122,3307,401884494
+2027-05-22,Mainz,VfB Stuttgart,2950,134,401884496
+2027-05-22,RB Leipzig,TSG Hoffenheim,11420,7911,401884499
+2027-05-22,SC Freiburg,Borussia Dortmund,126,124,401884498
+2027-05-22,SV Elversberg,Werder Bremen,10388,137,401884492
+2027-05-22,Schalke 04,Bayer Leverkusen,133,131,401884493

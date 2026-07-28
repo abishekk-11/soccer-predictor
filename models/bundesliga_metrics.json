@@ -1,0 +1,25 @@
+{
+  "league": "Bundesliga",
+  "evaluation_method": "Chronological holdout: 2023/24 through 2025/26; no same-day result leakage.",
+  "training_matches": 2142,
+  "holdout_matches": 918,
+  "data_through": "2026-05-16",
+  "validation_start": "2023-08-01",
+  "home_win_baseline_accuracy": 0.4205,
+  "logistic": {
+    "accuracy": 0.5163,
+    "log_loss": 0.9865,
+    "multiclass_brier": 0.5874
+  },
+  "boosted": {
+    "accuracy": 0.4695,
+    "log_loss": 1.1188,
+    "multiclass_brier": 0.6609
+  },
+  "selected_blend": {
+    "hist_gradient_boosting_weight": 0.0,
+    "accuracy": 0.5163,
+    "log_loss": 0.9865,
+    "multiclass_brier": 0.5874
+  }
+}

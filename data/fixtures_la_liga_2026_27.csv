@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,HomeTeamId,AwayTeamId,EventId
+2026-08-15,Alavés,Getafe,96,2922,401882926
+2026-08-15,Sevilla,Rayo Vallecano,243,101,401882918
+2026-08-16,Celta Vigo,Osasuna,85,97,401882924
+2026-08-16,Espanyol,Levante,88,1538,401882922
+2026-08-16,Racing Santander,Villarreal,87,102,401882920
+2026-08-17,Deportivo La Coruña,Elche,90,3751,401882923
+2026-08-19,Atlético Madrid,Málaga,1068,99,401882925
+2026-08-20,Rayo Vallecano,Alavés,101,96,401882908
+2026-08-21,Real Betis,Real Sociedad,244,89,401882914
+2026-08-22,Athletic Club,Sevilla,93,243,401882916
+2026-08-22,Espanyol,Real Madrid,88,86,401882912
+2026-08-22,Valencia,Celta Vigo,94,85,401882907
+2026-08-23,Atlético Madrid,Villarreal,1068,102,401882915
+2026-08-23,Elche,Barcelona,3751,83,401882913
+2026-08-23,Getafe,Racing Santander,2922,87,401882911
+2026-08-24,Málaga,Deportivo La Coruña,99,90,401882910
+2026-08-24,Osasuna,Levante,97,1538,401882909
+2026-08-25,Valencia,Real Betis,94,244,401882917
+2026-08-26,Real Madrid,Real Sociedad,86,89,401882919
+2026-08-27,Barcelona,Athletic Club,83,93,401882921
+2026-08-28,Alavés,Villarreal,96,102,401882906
+2026-08-28,Racing Santander,Elche,87,3751,401882900
+2026-08-29,Levante,Real Betis,1538,244,401882902
+2026-08-29,Real Sociedad,Espanyol,89,88,401882898
+2026-08-29,Sevilla,Atlético Madrid,243,1068,401882897
+2026-08-30,Celta Vigo,Athletic Club,85,93,401882905
+2026-08-30,Deportivo La Coruña,Valencia,90,94,401882904
+2026-08-30,Real Madrid,Málaga,86,99,401882899
+2026-08-31,Barcelona,Rayo Vallecano,83,101,401882903
+2026-08-31,Osasuna,Getafe,97,2922,401882901
+2026-09-06,Alavés,Osasuna,96,97,401882896
+2026-09-06,Athletic Club,Atlético Madrid,93,1068,401882895
+2026-09-06,Elche,Real Sociedad,3751,89,401882893
+2026-09-06,Espanyol,Sevilla,88,243,401882892
+2026-09-06,Getafe,Celta Vigo,2922,85,401882891
+2026-09-06,Málaga,Levante,99,1538,401882890
+2026-09-06,Rayo Vallecano,Racing Santander,101,87,401882889
+2026-09-06,Real Betis,Real Madrid,244,86,401882894
+2026-09-06,Valencia,Barcelona,94,83,401882888
+2026-09-06,Villarreal,Deportivo La Coruña,102,90,401882887
+2026-09-13,Athletic Club,Elche,93,3751,401882886
+2026-09-13,Celta Vigo,Málaga,85,99,401882885
+2026-09-13,Getafe,Deportivo La Coruña,2922,90,401882884
+2026-09-13,Levante,Barcelona,1538,83,401882883
+2026-09-13,Osasuna,Espanyol,97,88,401882882
+2026-09-13,Racing Santander,Alavés,87,96,401882881
+2026-09-13,Real Madrid,Rayo Vallecano,86,101,401882880
+2026-09-13,Real Sociedad,Atlético Madrid,89,1068,401882879
+2026-09-13,Sevilla,Valencia,243,94,401882878
+2026-09-13,Villarreal,Real Betis,102,244,401882877
+2026-09-16,Alavés,Valencia,96,94,401882876
+2026-09-16,Atlético Madrid,Osasuna,1068,97,401882875
+2026-09-16,Barcelona,Racing Santander,83,87,401882871
+2026-09-16,Deportivo La Coruña,Sevilla,90,243,401882873
+2026-09-16,Elche,Real Madrid,3751,86,401882872
+2026-09-16,Levante,Athletic Club,1538,93,401882870
+2026-09-16,Málaga,Villarreal,99,102,401882869
+2026-09-16,Rayo Vallecano,Espanyol,101,88,401882868
+2026-09-16,Real Betis,Getafe,244,2922,401882874
+2026-09-16,Real Sociedad,Celta Vigo,89,85,401882867
+2026-09-20,Athletic Club,Alavés,93,96,401882866
+2026-09-20,Atlético Madrid,Real Madrid,1068,86,401882865
+2026-09-20,Celta Vigo,Racing Santander,85,87,401882864
+2026-09-20,Deportivo La Coruña,Real Betis,90,244,401882863
+2026-09-20,Espanyol,Elche,88,3751,401882862
+2026-09-20,Getafe,Málaga,2922,99,401882861
+2026-09-20,Osasuna,Rayo Vallecano,97,101,401882860
+2026-09-20,Sevilla,Barcelona,243,83,401882859
+2026-09-20,Valencia,Real Sociedad,94,89,401882858
+2026-09-20,Villarreal,Levante,102,1538,401882857
+2026-10-11,Alavés,Atlético Madrid,96,1068,401882856
+2026-10-11,Barcelona,Getafe,83,2922,401882853
+2026-10-11,Elche,Celta Vigo,3751,85,401882854
+2026-10-11,Levante,Sevilla,1538,243,401882852
+2026-10-11,Málaga,Espanyol,99,88,401882851
+2026-10-11,Racing Santander,Valencia,87,94,401882850
+2026-10-11,Rayo Vallecano,Athletic Club,101,93,401882849
+2026-10-11,Real Betis,Osasuna,244,97,401882855
+2026-10-11,Real Madrid,Villarreal,86,102,401882848
+2026-10-11,Real Sociedad,Deportivo La Coruña,89,90,401882847
+2026-10-18,Celta Vigo,Alavés,85,96,401882845
+2026-10-18,Deportivo La Coruña,Levante,90,1538,401882844
+2026-10-18,Espanyol,Atlético Madrid,88,1068,401882843
+2026-10-18,Getafe,Rayo Vallecano,2922,101,401882842
+2026-10-18,Málaga,Real Sociedad,99,89,401882841
+2026-10-18,Osasuna,Racing Santander,97,87,401882840
+2026-10-18,Real Betis,Barcelona,244,83,401882846
+2026-10-18,Real Madrid,Sevilla,86,243,401882839
+2026-10-18,Valencia,Athletic Club,94,93,401882838
+2026-10-18,Villarreal,Elche,102,3751,401882837
+2026-10-25,Alavés,Málaga,96,99,401882836
+2026-10-25,Athletic Club,Getafe,93,2922,401882835
+2026-10-25,Atlético Madrid,Deportivo La Coruña,1068,90,401882834
+2026-10-25,Barcelona,Real Madrid,83,86,401882832
+2026-10-25,Celta Vigo,Real Betis,85,244,401882833
+2026-10-25,Racing Santander,Espanyol,87,88,401882831
+2026-10-25,Rayo Vallecano,Elche,101,3751,401882830
+2026-10-25,Real Sociedad,Levante,89,1538,401882829
+2026-10-25,Sevilla,Osasuna,243,97,401882828
+2026-10-25,Valencia,Villarreal,94,102,401882827
+2026-11-01,Athletic Club,Real Sociedad,93,89,401882826
+2026-11-01,Barcelona,Alavés,83,96,401882822
+2026-11-01,Deportivo La Coruña,Osasuna,90,97,401882824
+2026-11-01,Elche,Valencia,3751,94,401882823
+2026-11-01,Getafe,Sevilla,2922,243,401882821
+2026-11-01,Levante,Atlético Madrid,1538,1068,401882820
+2026-11-01,Racing Santander,Real Madrid,87,86,401882819
+2026-11-01,Rayo Vallecano,Celta Vigo,101,85,401882818
+2026-11-01,Real Betis,Málaga,244,99,401882825
+2026-11-01,Villarreal,Espanyol,102,88,401882817
+2026-11-08,Atlético Madrid,Barcelona,1068,83,401882816
+2026-11-08,Celta Vigo,Levante,85,1538,401882815
+2026-11-08,Elche,Real Betis,3751,244,401882814
+2026-11-08,Espanyol,Deportivo La Coruña,88,90,401882813
+2026-11-08,Málaga,Racing Santander,99,87,401882812
+2026-11-08,Osasuna,Athletic Club,97,93,401882811
+2026-11-08,Real Sociedad,Rayo Vallecano,89,101,401882810
+2026-11-08,Sevilla,Alavés,243,96,401882809
+2026-11-08,Valencia,Real Madrid,94,86,401882808
+2026-11-08,Villarreal,Getafe,102,2922,401882807
+2026-11-22,Alavés,Deportivo La Coruña,96,90,401882806
+2026-11-22,Athletic Club,Espanyol,93,88,401882805
+2026-11-22,Barcelona,Villarreal,83,102,401882804
+2026-11-22,Getafe,Atlético Madrid,2922,1068,401882803
+2026-11-22,Levante,Elche,1538,3751,401882802
+2026-11-22,Osasuna,Málaga,97,99,401882801
+2026-11-22,Racing Santander,Real Sociedad,87,89,401882800
+2026-11-22,Rayo Vallecano,Valencia,101,94,401882799
+2026-11-22,Real Madrid,Celta Vigo,86,85,401882798
+2026-11-22,Sevilla,Real Betis,243,244,401882797
+2026-11-29,Celta Vigo,Villarreal,85,102,401882795
+2026-11-29,Deportivo La Coruña,Barcelona,90,83,401882794
+2026-11-29,Elche,Atlético Madrid,3751,1068,401882793
+2026-11-29,Espanyol,Getafe,88,2922,401882792
+2026-11-29,Levante,Racing Santander,1538,87,401882791
+2026-11-29,Málaga,Athletic Club,99,93,401882790
+2026-11-29,Real Betis,Rayo Vallecano,244,101,401882796
+2026-11-29,Real Madrid,Alavés,86,96,401882789
+2026-11-29,Real Sociedad,Sevilla,89,243,401882788
+2026-11-29,Valencia,Osasuna,94,97,401882787
+2026-12-06,Alavés,Espanyol,96,88,401882786
+2026-12-06,Athletic Club,Real Madrid,93,86,401882785
+2026-12-06,Atlético Madrid,Real Betis,1068,244,401882784
+2026-12-06,Barcelona,Celta Vigo,83,85,401882783
+2026-12-06,Getafe,Valencia,2922,94,401882782
+2026-12-06,Osasuna,Elche,97,3751,401882781
+2026-12-06,Racing Santander,Deportivo La Coruña,87,90,401882780
+2026-12-06,Rayo Vallecano,Levante,101,1538,401882779
+2026-12-06,Sevilla,Málaga,243,99,401882778
+2026-12-06,Villarreal,Real Sociedad,102,89,401882777
+2026-12-13,Atlético Madrid,Valencia,1068,94,401882776
+2026-12-13,Deportivo La Coruña,Athletic Club,90,93,401882774
+2026-12-13,Elche,Sevilla,3751,243,401882773
+2026-12-13,Espanyol,Celta Vigo,88,85,401882772
+2026-12-13,Levante,Alavés,1538,96,401882771
+2026-12-13,Málaga,Barcelona,99,83,401882770
+2026-12-13,Real Betis,Racing Santander,244,87,401882775
+2026-12-13,Real Madrid,Osasuna,86,97,401882769
+2026-12-13,Real Sociedad,Getafe,89,2922,401882768
+2026-12-13,Villarreal,Rayo Vallecano,102,101,401882767
+2026-12-20,Alavés,Elche,96,3751,401882766
+2026-12-20,Athletic Club,Real Betis,93,244,401882765
+2026-12-20,Barcelona,Real Sociedad,83,89,401882762
+2026-12-20,Celta Vigo,Atlético Madrid,85,1068,401882764
+2026-12-20,Deportivo La Coruña,Real Madrid,90,86,401882763
+2026-12-20,Getafe,Levante,2922,1538,401882761
+2026-12-20,Osasuna,Villarreal,97,102,401882760
+2026-12-20,Rayo Vallecano,Málaga,101,99,401882759
+2026-12-20,Sevilla,Racing Santander,243,87,401882758
+2026-12-20,Valencia,Espanyol,94,88,401882757
+2027-01-03,Celta Vigo,Deportivo La Coruña,85,90,401882755
+2027-01-03,Espanyol,Barcelona,88,83,401882754
+2027-01-03,Levante,Valencia,1538,94,401882753
+2027-01-03,Málaga,Elche,99,3751,401882752
+2027-01-03,Racing Santander,Athletic Club,87,93,401882751
+2027-01-03,Rayo Vallecano,Atlético Madrid,101,1068,401882750
+2027-01-03,Real Betis,Alavés,244,96,401882756
+2027-01-03,Real Madrid,Getafe,86,2922,401882749
+2027-01-03,Real Sociedad,Osasuna,89,97,401882748
+2027-01-03,Villarreal,Sevilla,102,243,401882747
+2027-01-10,Alavés,Real Sociedad,96,89,401882746
+2027-01-10,Athletic Club,Villarreal,93,102,401882745
+2027-01-10,Atlético Madrid,Racing Santander,1068,87,401882744
+2027-01-10,Deportivo La Coruña,Rayo Vallecano,90,101,401882743
+2027-01-10,Elche,Getafe,3751,2922,401882742
+2027-01-10,Espanyol,Real Betis,88,244,401882741
+2027-01-10,Osasuna,Barcelona,97,83,401882740
+2027-01-10,Real Madrid,Levante,86,1538,401882739
+2027-01-10,Sevilla,Celta Vigo,243,85,401882738
+2027-01-10,Valencia,Málaga,94,99,401882737
+2027-01-17,Atlético Madrid,Real Sociedad,1068,89,401882736
+2027-01-17,Barcelona,Elche,83,3751,401882733
+2027-01-17,Celta Vigo,Valencia,85,94,401882734
+2027-01-17,Getafe,Athletic Club,2922,93,401882732
+2027-01-17,Levante,Espanyol,1538,88,401882731
+2027-01-17,Málaga,Real Madrid,99,86,401882730
+2027-01-17,Racing Santander,Osasuna,87,97,401882729
+2027-01-17,Rayo Vallecano,Sevilla,101,243,401882728
+2027-01-17,Real Betis,Deportivo La Coruña,244,90,401882735
+2027-01-17,Villarreal,Alavés,102,96,401882727
+2027-01-24,Alavés,Barcelona,96,83,401882726
+2027-01-24,Athletic Club,Levante,93,1538,401882725
+2027-01-24,Deportivo La Coruña,Atlético Madrid,90,1068,401882724
+2027-01-24,Elche,Rayo Vallecano,3751,101,401882723
+2027-01-24,Espanyol,Villarreal,88,102,401882722
+2027-01-24,Getafe,Osasuna,2922,97,401882721
+2027-01-24,Racing Santander,Celta Vigo,87,85,401882720
+2027-01-24,Real Madrid,Real Betis,86,244,401882719
+2027-01-24,Real Sociedad,Málaga,89,99,401882718
+2027-01-24,Valencia,Sevilla,94,243,401882717
+2027-01-31,Atlético Madrid,Espanyol,1068,88,401882716
+2027-01-31,Barcelona,Valencia,83,94,401882713
+2027-01-31,Celta Vigo,Getafe,85,2922,401882714
+2027-01-31,Levante,Real Sociedad,1538,89,401882712
+2027-01-31,Málaga,Alavés,99,96,401882711
+2027-01-31,Osasuna,Deportivo La Coruña,97,90,401882710
+2027-01-31,Rayo Vallecano,Real Madrid,101,86,401882709
+2027-01-31,Real Betis,Elche,244,3751,401882715
+2027-01-31,Sevilla,Athletic Club,243,93,401882708
+2027-01-31,Villarreal,Racing Santander,102,87,401882707
+2027-02-07,Alavés,Celta Vigo,96,85,401882706
+2027-02-07,Athletic Club,Osasuna,93,97,401882705
+2027-02-07,Barcelona,Atlético Madrid,83,1068,401882700
+2027-02-07,Deportivo La Coruña,Málaga,90,99,401882703
+2027-02-07,Elche,Levante,3751,1538,401882702
+2027-02-07,Espanyol,Rayo Vallecano,88,101,401882701
+2027-02-07,Getafe,Villarreal,2922,102,401882699
+2027-02-07,Real Betis,Sevilla,244,243,401882704
+2027-02-07,Real Sociedad,Real Madrid,89,86,401882698
+2027-02-07,Valencia,Racing Santander,94,87,401882697
+2027-02-14,Celta Vigo,Rayo Vallecano,85,101,401882696
+2027-02-14,Elche,Deportivo La Coruña,3751,90,401882695
+2027-02-14,Levante,Málaga,1538,99,401882694
+2027-02-14,Osasuna,Atlético Madrid,97,1068,401882693
+2027-02-14,Racing Santander,Getafe,87,2922,401882692
+2027-02-14,Real Madrid,Athletic Club,86,93,401882691
+2027-02-14,Real Sociedad,Real Betis,89,244,401882690
+2027-02-14,Sevilla,Espanyol,243,88,401882689
+2027-02-14,Valencia,Alavés,94,96,401882688
+2027-02-14,Villarreal,Barcelona,102,83,401882687
+2027-02-21,Alavés,Racing Santander,96,87,401882686
+2027-02-21,Athletic Club,Celta Vigo,93,85,401882685
+2027-02-21,Atlético Madrid,Elche,1068,3751,401882684
+2027-02-21,Barcelona,Levante,83,1538,401882681
+2027-02-21,Deportivo La Coruña,Real Sociedad,90,89,401882683
+2027-02-21,Espanyol,Osasuna,88,97,401882682
+2027-02-21,Málaga,Real Betis,99,244,401882680
+2027-02-21,Rayo Vallecano,Getafe,101,2922,401882679
+2027-02-21,Sevilla,Real Madrid,243,86,401882678
+2027-02-21,Villarreal,Valencia,102,94,401882677
+2027-02-28,Athletic Club,Barcelona,93,83,401882676
+2027-02-28,Celta Vigo,Espanyol,85,88,401882674
+2027-02-28,Getafe,Alavés,2922,96,401882673
+2027-02-28,Levante,Deportivo La Coruña,1538,90,401882672
+2027-02-28,Málaga,Atlético Madrid,99,1068,401882671
+2027-02-28,Osasuna,Sevilla,97,243,401882670
+2027-02-28,Racing Santander,Rayo Vallecano,87,101,401882669
+2027-02-28,Real Betis,Villarreal,244,102,401882675
+2027-02-28,Real Madrid,Valencia,86,94,401882668
+2027-02-28,Real Sociedad,Elche,89,3751,401882667
+2027-03-07,Alavés,Athletic Club,96,93,401882666
+2027-03-07,Atlético Madrid,Celta Vigo,1068,85,401882665
+2027-03-07,Barcelona,Real Betis,83,244,401882661
+2027-03-07,Deportivo La Coruña,Getafe,90,2922,401882664
+2027-03-07,Elche,Málaga,3751,99,401882663
+2027-03-07,Espanyol,Racing Santander,88,87,401882662
+2027-03-07,Rayo Vallecano,Osasuna,101,97,401882660
+2027-03-07,Sevilla,Real Sociedad,243,89,401882659
+2027-03-07,Valencia,Levante,94,1538,401882658
+2027-03-07,Villarreal,Real Madrid,102,86,401882657
+2027-03-14,Alavés,Sevilla,96,243,401882656
+2027-03-14,Athletic Club,Valencia,93,94,401882655
+2027-03-14,Barcelona,Deportivo La Coruña,83,90,401882652
+2027-03-14,Elche,Villarreal,3751,102,401882653
+2027-03-14,Getafe,Real Sociedad,2922,89,401882651
+2027-03-14,Málaga,Rayo Vallecano,99,101,401882650
+2027-03-14,Osasuna,Celta Vigo,97,85,401882649
+2027-03-14,Racing Santander,Atlético Madrid,87,1068,401882648
+2027-03-14,Real Betis,Levante,244,1538,401882654
+2027-03-14,Real Madrid,Espanyol,86,88,401882647
+2027-03-21,Atlético Madrid,Getafe,1068,2922,401882646
+2027-03-21,Celta Vigo,Real Madrid,85,86,401882645
+2027-03-21,Espanyol,Athletic Club,88,93,401882644
+2027-03-21,Levante,Osasuna,1538,97,401882643
+2027-03-21,Racing Santander,Real Betis,87,244,401882642
+2027-03-21,Rayo Vallecano,Barcelona,101,83,401882641
+2027-03-21,Real Sociedad,Alavés,89,96,401882640
+2027-03-21,Sevilla,Elche,243,3751,401882639
+2027-03-21,Valencia,Deportivo La Coruña,94,90,401882638
+2027-03-21,Villarreal,Málaga,102,99,401882637
+2027-04-04,Athletic Club,Racing Santander,93,87,401882636
+2027-04-04,Barcelona,Sevilla,83,243,401882632
+2027-04-04,Deportivo La Coruña,Villarreal,90,102,401882634
+2027-04-04,Elche,Alavés,3751,96,401882633
+2027-04-04,Getafe,Espanyol,2922,88,401882631
+2027-04-04,Levante,Rayo Vallecano,1538,101,401882630
+2027-04-04,Málaga,Osasuna,99,97,401882629
+2027-04-04,Real Betis,Celta Vigo,244,85,401882635
+2027-04-04,Real Madrid,Atlético Madrid,86,1068,401882628
+2027-04-04,Real Sociedad,Valencia,89,94,401882627
+2027-04-11,Alavés,Real Betis,96,244,401882626
+2027-04-11,Atlético Madrid,Levante,1068,1538,401882625
+2027-04-11,Celta Vigo,Elche,85,3751,401882624
+2027-04-11,Espanyol,Málaga,88,99,401882623
+2027-04-11,Osasuna,Real Madrid,97,86,401882622
+2027-04-11,Racing Santander,Barcelona,87,83,401882621
+2027-04-11,Rayo Vallecano,Real Sociedad,101,89,401882620
+2027-04-11,Sevilla,Deportivo La Coruña,243,90,401882619
+2027-04-11,Valencia,Getafe,94,2922,401882618
+2027-04-11,Villarreal,Athletic Club,102,93,401882617
+2027-04-18,Alavés,Rayo Vallecano,96,101,401882616
+2027-04-18,Atlético Madrid,Sevilla,1068,243,401882615
+2027-04-18,Barcelona,Espanyol,83,88,401882611
+2027-04-18,Deportivo La Coruña,Celta Vigo,90,85,401882613
+2027-04-18,Elche,Osasuna,3751,97,401882612
+2027-04-18,Getafe,Real Madrid,2922,86,401882610
+2027-04-18,Levante,Villarreal,1538,102,401882609
+2027-04-18,Málaga,Valencia,99,94,401882608
+2027-04-18,Real Betis,Athletic Club,244,93,401882614
+2027-04-18,Real Sociedad,Racing Santander,89,87,401882607
+2027-04-21,Athletic Club,Deportivo La Coruña,93,90,401882606
+2027-04-21,Celta Vigo,Barcelona,85,83,401882605
+2027-04-21,Espanyol,Real Sociedad,88,89,401882604
+2027-04-21,Getafe,Real Betis,2922,244,401882603
+2027-04-21,Osasuna,Alavés,97,96,401882602
+2027-04-21,Racing Santander,Málaga,87,99,401882601
+2027-04-21,Real Madrid,Elche,86,3751,401882600
+2027-04-21,Sevilla,Levante,243,1538,401882599
+2027-04-21,Valencia,Rayo Vallecano,94,101,401882598
+2027-04-21,Villarreal,Atlético Madrid,102,1068,401882597
+2027-05-02,Atlético Madrid,Alavés,1068,96,401882596
+2027-05-02,Barcelona,Osasuna,83,97,401882591
+2027-05-02,Celta Vigo,Sevilla,85,243,401882594
+2027-05-02,Deportivo La Coruña,Racing Santander,90,87,401882593
+2027-05-02,Elche,Espanyol,3751,88,401882592
+2027-05-02,Levante,Real Madrid,1538,86,401882590
+2027-05-02,Málaga,Getafe,99,2922,401882589
+2027-05-02,Rayo Vallecano,Villarreal,101,102,401882588
+2027-05-02,Real Betis,Valencia,244,94,401882595
+2027-05-02,Real Sociedad,Athletic Club,89,93,401882587
+2027-05-09,Alavés,Levante,96,1538,401882586
+2027-05-09,Athletic Club,Málaga,93,99,401882585
+2027-05-09,Getafe,Elche,2922,3751,401882583
+2027-05-09,Osasuna,Real Sociedad,97,89,401882582
+2027-05-09,Racing Santander,Sevilla,87,243,401882581
+2027-05-09,Rayo Vallecano,Deportivo La Coruña,101,90,401882580
+2027-05-09,Real Betis,Espanyol,244,88,401882584
+2027-05-09,Real Madrid,Barcelona,86,83,401882579
+2027-05-09,Valencia,Atlético Madrid,94,1068,401882578
+2027-05-09,Villarreal,Celta Vigo,102,85,401882577
+2027-05-16,Atlético Madrid,Rayo Vallecano,1068,101,401882576
+2027-05-16,Deportivo La Coruña,Alavés,90,96,401882575
+2027-05-16,Elche,Athletic Club,3751,93,401882574
+2027-05-16,Espanyol,Valencia,88,94,401882573
+2027-05-16,Levante,Getafe,1538,2922,401882572
+2027-05-16,Málaga,Celta Vigo,99,85,401882571
+2027-05-16,Osasuna,Real Betis,97,244,401882570
+2027-05-16,Real Madrid,Racing Santander,86,87,401882569
+2027-05-16,Real Sociedad,Barcelona,89,83,401882568
+2027-05-16,Sevilla,Villarreal,243,102,401882567
+2027-05-23,Alavés,Real Madrid,96,86,401882566
+2027-05-23,Atlético Madrid,Athletic Club,1068,93,401882565
+2027-05-23,Barcelona,Málaga,83,99,401882562
+2027-05-23,Celta Vigo,Real Sociedad,85,89,401882564
+2027-05-23,Deportivo La Coruña,Espanyol,90,88,401882563
+2027-05-23,Racing Santander,Levante,87,1538,401882561
+2027-05-23,Rayo Vallecano,Real Betis,101,244,401882560
+2027-05-23,Sevilla,Getafe,243,2922,401882559
+2027-05-23,Valencia,Elche,94,3751,401882558
+2027-05-23,Villarreal,Osasuna,102,97,401882557
+2027-05-30,Athletic Club,Rayo Vallecano,93,101,401882556
+2027-05-30,Elche,Racing Santander,3751,87,401882554
+2027-05-30,Espanyol,Alavés,88,96,401882553
+2027-05-30,Getafe,Barcelona,2922,83,401882552
+2027-05-30,Levante,Celta Vigo,1538,85,401882551
+2027-05-30,Málaga,Sevilla,99,243,401882550
+2027-05-30,Osasuna,Valencia,97,94,401882549
+2027-05-30,Real Betis,Atlético Madrid,244,1068,401882555
+2027-05-30,Real Madrid,Deportivo La Coruña,86,90,401882548
+2027-05-30,Real Sociedad,Villarreal,89,102,401882547

@@ -1,0 +1,25 @@
+{
+  "league": "La Liga",
+  "evaluation_method": "Chronological holdout: 2023/24 through 2025/26; no same-day result leakage.",
+  "training_matches": 2655,
+  "holdout_matches": 1140,
+  "data_through": "2026-05-24",
+  "validation_start": "2023-08-01",
+  "home_win_baseline_accuracy": 0.4579,
+  "logistic": {
+    "accuracy": 0.5316,
+    "log_loss": 0.98,
+    "multiclass_brier": 0.5827
+  },
+  "boosted": {
+    "accuracy": 0.5044,
+    "log_loss": 1.037,
+    "multiclass_brier": 0.6143
+  },
+  "selected_blend": {
+    "hist_gradient_boosting_weight": 0.1,
+    "accuracy": 0.5333,
+    "log_loss": 0.9793,
+    "multiclass_brier": 0.5821
+  }
+}

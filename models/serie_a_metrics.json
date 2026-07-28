@@ -1,0 +1,25 @@
+{
+  "league": "Serie A",
+  "evaluation_method": "Chronological holdout: 2023/24 through 2025/26; no same-day result leakage.",
+  "training_matches": 2661,
+  "holdout_matches": 1140,
+  "data_through": "2026-05-24",
+  "validation_start": "2023-08-01",
+  "home_win_baseline_accuracy": 0.4018,
+  "logistic": {
+    "accuracy": 0.5246,
+    "log_loss": 0.9999,
+    "multiclass_brier": 0.5968
+  },
+  "boosted": {
+    "accuracy": 0.5079,
+    "log_loss": 1.0509,
+    "multiclass_brier": 0.6188
+  },
+  "selected_blend": {
+    "hist_gradient_boosting_weight": 0.2,
+    "accuracy": 0.5228,
+    "log_loss": 0.9973,
+    "multiclass_brier": 0.5946
+  }
+}
