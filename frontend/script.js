@@ -579,6 +579,10 @@ async function updateMatchup() {
     return;
   }
   setStatus("");
+  // Player portfolios are richer (and therefore slower) than the form cards.
+  // They load after a user asks for a forecast so changing fixtures remains
+  // responsive and the main prediction never waits on roster calculations.
+  dom.playerCard.classList.add("hidden");
   const formRequest = Promise.all([
       fetch(leagueQuery(`/form/${encodeURIComponent(home)}`)),
       fetch(leagueQuery(`/form/${encodeURIComponent(away)}`))
@@ -586,16 +590,11 @@ async function updateMatchup() {
     if (!homeResponse.ok || !awayResponse.ok) throw new Error("Form data unavailable");
     return Promise.all([homeResponse.json(), awayResponse.json()]);
   });
-  const playersRequest = fetch(leagueQuery(`/match-players?home_team=${encodeURIComponent(home)}&away_team=${encodeURIComponent(away)}&fixture_date=${encodeURIComponent(fixtureDate || "")}`))
-    .then(async response => {
-      if (!response.ok) throw new Error("Player data unavailable");
-      return response.json();
-    });
-  const [formResult, playersResult] = await Promise.allSettled([formRequest, playersRequest]);
+  const formResult = await Promise.allSettled([formRequest]);
   if (requestVersion !== matchupVersion || home !== dom.homeTeam.value || away !== dom.awayTeam.value) return;
 
-  if (formResult.status === "fulfilled") {
-    const [homeData, awayData] = formResult.value;
+  if (formResult[0].status === "fulfilled") {
+    const [homeData, awayData] = formResult[0].value;
     const hasLiveForm = Boolean(homeData.live || awayData.live);
     const currentSeason = String(homeData.current_season || awayData.current_season || "2026-27").replace(/^(\d{4})-(\d{2}).*$/, "$1/$2");
     const refreshMinutes = Number(homeData.refresh_minutes || awayData.refresh_minutes || 15);
@@ -610,14 +609,22 @@ async function updateMatchup() {
   } else {
     dom.formCard.classList.add("hidden");
     setStatus("Recent form is temporarily unavailable.");
-    console.error(formResult.reason);
+    console.error(formResult[0].reason);
   }
+}
 
-  if (playersResult.status === "fulfilled") {
-    renderPlayerMatchup(playersResult.value);
-  } else {
+async function loadPlayerMatchup(home, away, fixtureDate, requestVersion) {
+  try {
+    const response = await fetch(leagueQuery(
+      `/match-players?home_team=${encodeURIComponent(home)}&away_team=${encodeURIComponent(away)}&fixture_date=${encodeURIComponent(fixtureDate || "")}`
+    ));
+    if (!response.ok) throw new Error("Player data unavailable");
+    const playerData = await response.json();
+    if (requestVersion !== matchupVersion || home !== dom.homeTeam.value || away !== dom.awayTeam.value) return;
+    renderPlayerMatchup(playerData);
+  } catch (error) {
     dom.playerCard.classList.add("hidden");
-    console.error(playersResult.reason);
+    console.error(error);
   }
 }
 
@@ -685,6 +692,9 @@ async function predictMatch(event) {
     history = [data, ...history].slice(0, 12);
     localStorage.setItem("pitchIqHistory", JSON.stringify(history));
     renderHistory();
+    // Do not delay the forecast while detailed scorer and assist portfolios
+    // are prepared. They appear immediately afterward for the same fixture.
+    void loadPlayerMatchup(home, away, selectedFixture?.date, matchupVersion);
   } catch (error) {
     setStatus("The forecast could not be generated. Please try again.");
     console.error(error);
