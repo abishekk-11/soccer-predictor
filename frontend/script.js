@@ -1,4 +1,8 @@
-const API = "http://127.0.0.1:8000";
+// Render serves the dashboard and API from one public address.  Retain the
+// local API address only when the static frontend is run on port 5500.
+const API = window.location.hostname === "127.0.0.1" && window.location.port === "5500"
+  ? "http://127.0.0.1:8000"
+  : "";
 
 const dom = {
   form: document.getElementById("predictionForm"),

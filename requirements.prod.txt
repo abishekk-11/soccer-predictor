@@ -1,0 +1,8 @@
+beautifulsoup4==4.15.0
+fastapi==0.140.7
+joblib==1.5.3
+numpy==2.5.1
+pandas==3.0.5
+requests==2.34.2
+scikit-learn==1.9.0
+uvicorn==0.51.0

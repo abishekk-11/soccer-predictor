@@ -4,12 +4,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import date
+from pathlib import Path
 
 import joblib
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from src.league_config import COMPLETED_SEASON, LEAGUES, LeagueConfig, get_league
@@ -20,6 +22,7 @@ from src.player_data import PlayerDataStore
 
 DEFAULT_LEAGUE = "premier_league"
 FORM_WINDOW = 5
+FRONTEND_DIR = Path(__file__).resolve().parents[1] / "frontend"
 PREMIER_LEAGUE_PROMOTED_TEAMS = {"Coventry", "Hull", "Ipswich"}
 PREMIER_LEAGUE_RESULTS_URL = "https://www.premierleague.com/en/matches/premier-league/2025-26/"
 
@@ -239,9 +242,10 @@ def prediction_payload(runtime: LeagueRuntime, home: str, away: str, fixture_dat
     }
 
 
-@app.get("/")
-def home():
-    return {"message": "European Soccer Predictor API running", "version": app.version, "leagues": list(LEAGUES)}
+@app.get("/health")
+def health_check():
+    """Lightweight health check used by the hosting provider."""
+    return {"status": "ok", "version": app.version}
 
 
 @app.get("/leagues")
@@ -362,3 +366,8 @@ def predict(match: MatchInput):
     _require_teams(runtime, match.home_team, match.away_team)
     fixture_date = match.fixture_date or runtime.default_fixture_date
     return prediction_payload(runtime, match.home_team, match.away_team, fixture_date)
+
+
+# Keep the dashboard and its API on one origin in production.  Mounting this
+# last preserves the explicit API and documentation routes above.
+app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
