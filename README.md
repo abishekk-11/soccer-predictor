@@ -6,6 +6,12 @@ Built as a portfolio project for data and software engineering roles, it combine
 
 > Forecasts are analytical estimates, not betting advice or guarantees.
 
+## Live demo
+
+Try the deployed application at **[pitch-iq-soccer-predictor.onrender.com](https://pitch-iq-soccer-predictor.onrender.com)**.
+
+The demo runs on Render's free tier. After 15 minutes without visitors, the first request can take about a minute while the service wakes up; subsequent requests are much faster.
+
 ## What the project does
 
 - Covers five leagues and their published 2026/27 fixtures.
