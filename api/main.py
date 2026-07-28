@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
+from threading import Lock
 
 import joblib
 import numpy as np
@@ -108,6 +109,7 @@ def _load_runtime(config: LeagueConfig) -> LeagueRuntime:
 # league on demand and cache it so opening the app is fast while a later league
 # switch still has its full roster data ready after the first request.
 RUNTIMES: dict[str, LeagueRuntime] = {}
+RUNTIME_LOCKS = {league_key: Lock() for league_key in LEAGUES}
 
 
 def runtime_for(league_key: str) -> LeagueRuntime:
@@ -116,8 +118,15 @@ def runtime_for(league_key: str) -> LeagueRuntime:
     except (KeyError, ValueError) as error:
         available = ", ".join(LEAGUES)
         raise HTTPException(status_code=404, detail=f"Unknown league '{league_key}'. Choose one of: {available}.") from error
+    # The dashboard asks for teams, fixtures, and validation information when
+    # a league is opened.  Those requests can arrive together, especially on
+    # the first visit after a free-host wake-up.  Initialise each league once
+    # so concurrent requests reuse the same prepared data instead of each
+    # rebuilding it independently.
     if league_key not in RUNTIMES:
-        RUNTIMES[league_key] = _load_runtime(config)
+        with RUNTIME_LOCKS[league_key]:
+            if league_key not in RUNTIMES:
+                RUNTIMES[league_key] = _load_runtime(config)
     return RUNTIMES[league_key]
 
 

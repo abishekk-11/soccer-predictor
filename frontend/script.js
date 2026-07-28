@@ -475,13 +475,17 @@ async function loadLeague() {
   dom.predictButton.disabled = true;
   dom.fixtureSelect.disabled = true;
   try {
-    const [teamsResponse, fixturesResponse, infoResponse] = await Promise.all([
-      fetch(leagueQuery("/teams")),
+    // Let the first request prepare a league once, then fetch the remaining
+    // lightweight views in parallel from that cached runtime.
+    const teamsResponse = await fetch(leagueQuery("/teams"));
+    if (!teamsResponse.ok) throw new Error("League data is unavailable.");
+    const teamsData = await teamsResponse.json();
+    const [fixturesResponse, infoResponse] = await Promise.all([
       fetch(leagueQuery("/fixtures")),
       fetch(leagueQuery("/model-info"))
     ]);
-    if (!teamsResponse.ok || !fixturesResponse.ok) throw new Error("League data is unavailable.");
-    const [teamsData, fixturesData] = await Promise.all([teamsResponse.json(), fixturesResponse.json()]);
+    if (!fixturesResponse.ok) throw new Error("League data is unavailable.");
+    const fixturesData = await fixturesResponse.json();
     const teams = Array.isArray(teamsData.teams) ? teamsData.teams : [];
     currentFixtures = Array.isArray(fixturesData.fixtures) ? fixturesData.fixtures : [];
     if (teams.length < 2 || !currentFixtures.length) throw new Error("There are not enough official fixtures to build a match.");
@@ -510,6 +514,9 @@ async function loadLeague() {
 
 async function loadLeagues() {
   setStatus("Loading supported leagues…");
+  const wakeUpNotice = window.setTimeout(() => {
+    setStatus("Waking up the predictor… free hosting can take up to a minute after inactivity.");
+  }, 2500);
   try {
     const response = await fetch(`${API}/leagues`);
     if (!response.ok) throw new Error("League list unavailable.");
@@ -532,6 +539,8 @@ async function loadLeagues() {
   } catch (error) {
     setStatus("Couldn’t connect to the predictor. Start the local API and refresh.");
     console.error(error);
+  } finally {
+    window.clearTimeout(wakeUpNotice);
   }
 }
 
