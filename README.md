@@ -8,7 +8,9 @@ Built as a portfolio project for data and software engineering roles, it combine
 
 ## Live demo
 
-The project is configured for Vercel. Once the repository is imported, Vercel will provide a public `*.vercel.app` demo link here. The deployment is serverless, so it does not use Render's free-tier sleep behaviour.
+Try the deployed application at **[soccer-predictor-ten.vercel.app](https://soccer-predictor-ten.vercel.app)**.
+
+The demo runs on Vercel's serverless platform, so it does not use Render's free-tier sleep behaviour.
 
 ## What the project does
 
