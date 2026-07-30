@@ -104,7 +104,7 @@ Open `http://127.0.0.1:5500` in your browser. Select a league and fixture to vie
 
 ## Deploy on Vercel
 
-The repository is already configured for Vercel's FastAPI runtime. It installs only the production dependencies and packages the frontend, trained models, and league data with the API function.
+The repository is already configured for Vercel's FastAPI runtime. It packages the frontend, trained per-league models, and league data with the API function while excluding unused training artefacts.
 
 1. Go to [vercel.com/new](https://vercel.com/new) and sign in with GitHub.
 2. Import `abishekk-11/soccer-predictor`.
