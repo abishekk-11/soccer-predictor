@@ -8,9 +8,7 @@ Built as a portfolio project for data and software engineering roles, it combine
 
 ## Live demo
 
-Try the deployed application at **[pitch-iq-soccer-predictor.onrender.com](https://pitch-iq-soccer-predictor.onrender.com)**.
-
-The demo runs on Render's free tier. After 15 minutes without visitors, the first request can take about a minute while the service wakes up; subsequent requests are much faster.
+The project is configured for Vercel. Once the repository is imported, Vercel will provide a public `*.vercel.app` demo link here. The deployment is serverless, so it does not use Render's free-tier sleep behaviour.
 
 ## What the project does
 
@@ -103,6 +101,18 @@ python -m http.server 5500 --directory frontend
 ```
 
 Open `http://127.0.0.1:5500` in your browser. Select a league and fixture to view the prediction.
+
+## Deploy on Vercel
+
+The repository is already configured for Vercel's FastAPI runtime. It installs only the production dependencies and packages the frontend, trained models, and league data with the API function.
+
+1. Go to [vercel.com/new](https://vercel.com/new) and sign in with GitHub.
+2. Import `abishekk-11/soccer-predictor`.
+3. Keep the project root as `./`. Vercel will detect **FastAPI** automatically.
+4. Leave environment variables empty, then click **Deploy**.
+5. Open the generated `*.vercel.app` domain and add that URL to the Live demo section above.
+
+Every push to the `main` branch will then create a new Vercel production deployment automatically.
 
 ## Refresh data and retrain
 
