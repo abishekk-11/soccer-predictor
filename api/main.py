@@ -17,6 +17,7 @@ from pydantic import BaseModel
 
 from src.league_config import COMPLETED_SEASON, LEAGUES, LeagueConfig, get_league
 from src.live_results import LIVE_RESULTS_TTL, LIVE_SEASON_LABEL, live_results_for
+from src.live_rosters import LIVE_ROSTER_TTL, live_roster_for
 from src.modeling import FEATURE_COLUMNS, FeatureState, completed_state
 from src.player_data import PlayerDataStore
 
@@ -355,7 +356,14 @@ def match_players(
     _require_teams(runtime, home_team, away_team)
     selected_date = fixture_date or runtime.default_fixture_date
     forecast = prediction_payload(runtime, home_team, away_team, selected_date)
-    payload = runtime.player_store.matchup(home_team, away_team, forecast["probabilities"])
+    home_roster = live_roster_for(runtime.config, runtime.fixtures, home_team, runtime.player_store.roster)
+    away_roster = live_roster_for(runtime.config, runtime.fixtures, away_team, runtime.player_store.roster)
+    payload = runtime.player_store.matchup(
+        home_team,
+        away_team,
+        forecast["probabilities"],
+        roster_overrides={home_team: home_roster.players, away_team: away_roster.players},
+    )
     return {
         "league": runtime.config.key,
         "league_name": runtime.config.name,
@@ -365,6 +373,21 @@ def match_players(
         "forecast_probabilities": forecast["probabilities"],
         "source_url": runtime.config.results_url,
         "player_stat_basis": runtime.player_store.stat_basis,
+        "squad_refresh": {
+            "refresh_minutes": int(LIVE_ROSTER_TTL.total_seconds() // 60),
+            "home": {
+                "live": home_roster.live,
+                "fetched_at": home_roster.fetched_at.isoformat(),
+                "source_url": home_roster.source_url,
+                "refresh_error": home_roster.refresh_error,
+            },
+            "away": {
+                "live": away_roster.live,
+                "fetched_at": away_roster.fetched_at.isoformat(),
+                "source_url": away_roster.source_url,
+                "refresh_error": away_roster.refresh_error,
+            },
+        },
         **payload,
     }
 

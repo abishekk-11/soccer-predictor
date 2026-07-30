@@ -35,6 +35,7 @@ LAST_COMPLETED_YEAR = 2025
 UPCOMING_YEAR = 2026
 REQUEST_TIMEOUT = 90
 MAX_ROSTER_WORKERS = 8
+MIN_LIVE_ROSTER_SIZE = 15
 
 
 def _get_json(url: str, **params: object) -> dict[str, Any]:
@@ -263,12 +264,15 @@ def _player_archives(
         except requests.RequestException:
             fallback_athletes = []
         current_ids = {str(athlete["id"]) for athlete in current_athletes}
-        combined_athletes = [
-            (athlete, "2026/27 roster feed") for athlete in current_athletes
-        ] + [
-            (athlete, "2025/26 squad carryover")
-            for athlete in fallback_athletes if str(athlete["id"]) not in current_ids
-        ]
+        # A complete current feed is authoritative: retaining last season's
+        # omitted names would reintroduce players who have transferred away.
+        # Carryovers are only a temporary safety net for an incomplete feed.
+        combined_athletes = [(athlete, "2026/27 roster feed") for athlete in current_athletes]
+        if len(current_ids) < MIN_LIVE_ROSTER_SIZE:
+            combined_athletes += [
+                (athlete, "2025/26 squad carryover")
+                for athlete in fallback_athletes if str(athlete["id"]) not in current_ids
+            ]
         for athlete, roster_source in combined_athletes:
             position = athlete.get("position", {}).get("displayName", "Midfielder")
             roster_rows.append({

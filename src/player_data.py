@@ -235,10 +235,13 @@ class PlayerDataStore:
             "has_history": bool(career_appearances > 0) if self.availability_by_appearances else bool(career_minutes > 0),
         }
 
-    def team_players(self, team: str) -> list[dict]:
-        roster = self.roster[self.roster.team == team].copy()
+    def team_players(self, team: str, roster_override: pd.DataFrame | None = None) -> list[dict]:
+        roster_source = self.roster if roster_override is None else roster_override
+        roster = roster_source[roster_source.team == team].copy()
         if roster.empty:
             return []
+        if "name_key" not in roster:
+            roster["name_key"] = roster.player_name.map(_name_key)
         players: list[dict] = []
         for row in roster.sort_values(["position", "player_name"]).itertuples(index=False):
             position = self._position(row.position)
@@ -301,9 +304,16 @@ class PlayerDataStore:
             "likelihood": player[likelihood_key],
         }
 
-    def matchup(self, home: str, away: str, probabilities: dict[str, float]) -> dict:
-        home_players = self.team_players(home)
-        away_players = self.team_players(away)
+    def matchup(
+        self,
+        home: str,
+        away: str,
+        probabilities: dict[str, float],
+        roster_overrides: dict[str, pd.DataFrame] | None = None,
+    ) -> dict:
+        roster_overrides = roster_overrides or {}
+        home_players = self.team_players(home, roster_overrides.get(home))
+        away_players = self.team_players(away, roster_overrides.get(away))
         home_pressure = float(np.clip(1.1 + 0.75 * (probabilities["home"] - probabilities["away"]), 0.5, 1.9))
         away_pressure = float(np.clip(0.95 + 0.75 * (probabilities["away"] - probabilities["home"]), 0.4, 1.75))
         self._apply_match_likelihoods(home_players, home_pressure)

@@ -424,7 +424,13 @@ function renderPlayerMatchup(data) {
   dom.awayPlayerPanel.className = "player-team-panel away";
   dom.homePlayerPanel.replaceChildren(createPlayerTeam(data.home, "Home", data));
   dom.awayPlayerPanel.replaceChildren(createPlayerTeam(data.away, "Away", data));
-  dom.playerSource.textContent = `${data.historical_window} completed data · latest ${data.latest_season}`;
+  const squadRefresh = data.squad_refresh || {};
+  const squadsLive = Boolean(squadRefresh.home?.live && squadRefresh.away?.live);
+  const refreshMinutes = Number(squadRefresh.refresh_minutes || 60);
+  const squadLabel = squadsLive
+    ? `live squads checked automatically every ${refreshMinutes} minutes`
+    : "latest cached squad shown while the live roster feed refreshes";
+  dom.playerSource.textContent = `${data.historical_window} completed data · ${squadLabel}`;
   dom.playerCard.classList.remove("hidden");
   applyOfficialBadge(dom.homePlayerPanel.querySelector(".team-crest"), data.home.team);
   applyOfficialBadge(dom.awayPlayerPanel.querySelector(".team-crest"), data.away.team);

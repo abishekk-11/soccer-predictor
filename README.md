@@ -19,6 +19,7 @@ The demo runs on Render's free tier. After 15 minutes without visitors, the firs
 - Shows each team's last five completed league fixtures, goals scored, and goals conceded.
 - Updates the recent-form panel from completed 2026/27 results while the season is running. Before matchday one, it falls back to 2025/26; early-season form is supplemented with the end of the prior season until five current matches are available.
 - Builds player portfolios with current roster information, available headshots, position, and ten seasons of completed league goals, assists, starts, and appearances.
+- Checks each selected club's live squad against the current-season roster feed every hour; a complete live squad replaces stale carryovers, while the cached squad remains visible during a temporary provider outage.
 - Ranks likely scorers and assisters for both teams using player history, position, availability, and the selected fixture forecast.
 
 ## Tech stack
@@ -133,9 +134,10 @@ curl -X POST http://127.0.0.1:8000/predict \
 
 - Fixture references: [Premier League](https://www.premierleague.com/en/fixtures), [La Liga](https://www.laliga.com/en-GB/laliga-easports/calendar), [Bundesliga](https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/1), [Ligue 1](https://ligue1.com/en/calendar/ligue1), and [Serie A](https://en.legaseriea.it/serie-a/fixtures-results)
 - Reproducible non-Premier-League schedule, results, and roster refresh: [ESPN public soccer feeds](https://site.api.espn.com/)
+- Transfer-window audit reference: [The Guardian's top-five-league transfer tracker](https://www.theguardian.com/football/ng-interactive/2026/jun/08/mens-transfer-window-summer-2026-all-deals-from-europes-top-five-leagues)
 - Premier League historic results: [Football-Data.co.uk](https://www.football-data.co.uk/englandm.php)
 - Player portraits: [TheSportsDB](https://www.thesportsdb.com/) and [Wikimedia Commons](https://commons.wikimedia.org/). Portraits are cached locally; the application uses initials when no reliable image is available.
 
 ## Limitations and responsible use
 
-The project does not know future injuries, transfers, tactical changes, manager changes, confirmed lineups, or future results. The recent-form display refreshes during the season, but the underlying match and player models must be refreshed and retrained to incorporate newly completed rounds. Use the results as a demonstration of data engineering and applied machine learning—not as a substitute for professional analysis or betting advice.
+The project does not know future injuries, tactical changes, manager changes, confirmed lineups, or future results. Squad membership refreshes automatically from the live roster feed, while the underlying match and player models must be refreshed and retrained to incorporate newly completed rounds. Use the results as a demonstration of data engineering and applied machine learning—not as a substitute for professional analysis or betting advice.
