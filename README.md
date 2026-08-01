@@ -1,8 +1,8 @@
 # Pitch IQ — Five-League Soccer Predictor
 
-Pitch IQ is a full-stack soccer analytics application that forecasts upcoming fixtures across Europe's five largest domestic leagues: the Premier League, La Liga, Bundesliga, Ligue 1, and Serie A.
+Pitch IQ is a full stack soccer analytics application which makes predictions about the future fixtures in all of the top five European leagues: Premier League, La Liga, Bundesliga, Ligue 1 and Serie A.
 
-Built as a portfolio project for data and software engineering roles, it combines historical match data, reproducible machine-learning workflows, a FastAPI backend, and an interactive browser interface. Users can select a fixture and explore match-outcome probabilities, recent team form, and pre-line-up goal and assist signals for each squad.
+Developed as a portfolio piece for the positions of Data Engineer and Software Engineer, Pitch IQ is built using historical data, machine learning pipelines, FastAPI server and web browser user interface to explore the probabilities of match outcomes, form of the teams and goal/assist indicators before the lineup.
 
 > Forecasts are analytical estimates, not betting advice or guarantees.
 
@@ -10,7 +10,6 @@ Built as a portfolio project for data and software engineering roles, it combine
 
 Try the deployed application at **[soccer-predictor-ten.vercel.app](https://soccer-predictor-ten.vercel.app)**.
 
-The demo runs on Vercel's serverless platform, so it does not use Render's free-tier sleep behaviour.
 
 ## What the project does
 
