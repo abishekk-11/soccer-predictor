@@ -13,13 +13,13 @@ Try the deployed application at **[soccer-predictor-ten.vercel.app](https://socc
 
 ## What the project does
 
-- Covers five leagues and their published 2026/27 fixtures.
-- Produces home-win, draw, and away-win probabilities for a selected match.
-- Shows each team's last five completed league fixtures, goals scored, and goals conceded.
-- Updates the recent-form panel from completed 2026/27 results while the season is running. Before matchday one, it falls back to 2025/26; early-season form is supplemented with the end of the prior season until five current matches are available.
-- Builds player portfolios with current roster information, available headshots, position, and ten seasons of completed league goals, assists, starts, and appearances.
-- Checks each selected club's live squad against the current-season roster feed every hour; a complete live squad replaces stale carryovers, while the cached squad remains visible during a temporary provider outage.
-- Ranks likely scorers and assisters for both teams using player history, position, availability, and the selected fixture forecast.
+- Features five leagues along with their scheduled 2026/27 fixtures.
+- Calculates the probability of home win, draw, and away win for the chosen game.
+- Displays five most recent matches played by each team along with goals scored and conceded.
+- Refreshes the recent form table from the completed 2026/27 fixtures throughout the season. Prior to the start of the season, it relies on 2025/26; early-season form is boosted by the end of the previous season until there are five current matches.
+- Constructs portfolios for players with the help of current team rosters, profile pictures, position, and ten years of completed league goals, assists, starts, and appearances.
+- Cross-references each selected team's current squad with the current season's roster feed every hour; current squad takes precedence over old carryovers, but a cached squad is shown if the provider temporarily goes offline.
+- Predicts top probable goal scorers and assisters for both teams based on their records and the prediction of the chosen fixture.
 
 ## Tech stack
 
